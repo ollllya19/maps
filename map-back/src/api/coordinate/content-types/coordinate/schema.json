@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coordinates",
+  "info": {
+    "singularName": "coordinate",
+    "pluralName": "coordinates",
+    "displayName": "Coordinate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plot": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plot.plot",
+      "inversedBy": "coordinates"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "latitude": {
+      "type": "float"
+    }
+  }
+}

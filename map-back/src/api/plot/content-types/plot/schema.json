@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plots",
+  "info": {
+    "singularName": "plot",
+    "pluralName": "plots",
+    "displayName": "plot",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coordinates": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coordinate.coordinate",
+      "mappedBy": "plot"
+    },
+    "level": {
+      "type": "integer"
+    }
+  }
+}
